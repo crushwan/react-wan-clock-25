@@ -1,0 +1,51 @@
+:root {
+  --text-color: #5c6bc0;
+}
+
+body {
+  background-color: #181818;
+  color: white;
+}
+
+h1 {
+  color: var(--text-color);
+  padding: 15px;
+}
+
+.time-sets {
+  display: grid;
+  grid-template-columns: 50px 200px 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.dual-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1200px;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .dual-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 900px;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dual-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 400px;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+  }
+}
